@@ -1,15 +1,26 @@
 [
     {
-        "nome": "Lucas",
-        "profissão": "Desenvolvedor",
-        "idade": 33,
-        "Localidade": "Brasil"
+        "id": 1,
+        "titulo": "A Origem",
+        "ano": 2010,
+        "genero": "Ficção Científica",
+        "sinopse": "Um ladrão que rouba segredos corporativos através do uso de tecnologia de partilha de sonhos recebe a tarefa inversa: plantar uma ideia na mente de um CEO.",
+        "imagem": "placeholder_inception.jpg"
     },
-
     {
-        "nome": "Lucas",
-        "profissão": "Desenvolvedor",
-        "idade": 33,
-        "Localidade": "Brasil"
+        "id": 2,
+        "titulo": "O Poderoso Chefão",
+        "ano": 1972,
+        "genero": "Crime",
+        "sinopse": "O patriarca envelhecido de uma dinastia do crime organizado transfere o controle de seu império clandestino para seu filho relutante.",
+        "imagem": "placeholder_godfather.jpg"
+    },
+    {
+        "id": 3,
+        "titulo": "Interestelar",
+        "ano": 2014,
+        "genero": "Ficção Científica",
+        "sinopse": "Uma equipe de exploradores viaja através de um buraco de minhoca no espaço, na tentativa de garantir a sobrevivência da humanidade.",
+        "imagem": "placeholder_interstellar.jpg"
     }
 ]
