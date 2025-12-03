@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --primary-color: #e50914; /* Vermelho Netflix */
+    --secondary-color: #f4f4f4;
+    --background-dark: #141414;
+    --text-light: #ffffff;
+    --text-muted: #aaaaaa;
+    --card-bg: #222222;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* --- 2. Header e Busca --- */
+header {
+    background-color: #000000;
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.search-container {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+}
+
+#searchInput {
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #333333;
+    color: var(--text-light);
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #ff000d;
+}
+
+/* --- 3. Lista de Filmes (Main) --- */
+#movieList {
+    padding: 30px 5%;
+    display: grid;
+    /* Layout responsivo em colunas */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* --- 4. Card do Filme --- */
+.movie-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    min-height: 450px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 350px; /* Altura fixa para todos os pôsteres */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+.movie-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-info h3 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.movie-info p {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    margin-bottom: 5px;
+}
+
+.movie-info p.sinopse {
+    margin-top: 10px;
+    font-style: italic;
+    color: #cccccc;
+    /* Limita o número de linhas para a sinopse */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* --- 5. Mensagens de Status --- */
+.no-results, .loading, .error {
+    grid-column: 1 / -1; /* Ocupa todas as colunas no grid */
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5em;
+    color: var(--text-muted);
+}
+
+.error {
+    color: var(--primary-color);
+}
+
+/* --- 6. Footer --- */
+footer {
+    background-color: #000000;
+    color: var(--text-muted);
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #333333;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Garante que os itens se ajustem em telas pequenas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer h2 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--text-light);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-container button {
+        border-radius: 0 0 5px 5px;
+        margin-top: 10px;
+    }
+    
+    #searchInput {
+         border-radius: 5px 5px 0 0;
+    }
+
+    #movieList {
+        grid-template-columns: 1fr; /* Apenas uma coluna em telas pequenas */
+        padding: 20px 3%;
+        justify-content: center;
+    }
+
+    .movie-card {
+        flex-direction: row; /* Coloca a imagem ao lado da info */
+        min-height: auto;
+    }
+
+    .movie-card img {
+        width: 120px; 
+        height: 180px; 
+        flex-shrink: 0;
+    }
+
+    .movie-info {
+        padding: 10px;
+    }
+    
+    .movie-info p.sinopse {
+         -webkit-line-clamp: 2; /* Sinopse menor no celular */
+    }
+
+    footer > div {
+        flex-direction: column;
+    }
+    
+    footer a {
+        margin: 5px 10px;
+    }
+}
