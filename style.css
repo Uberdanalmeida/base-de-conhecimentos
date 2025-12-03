@@ -15,9 +15,16 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: var(--background-dark);
     color: var(--text-light);
     line-height: 1.6;
+}
+
+main {
+    flex-grow: 1; /* Faz o main expandir e preencher o espaço vertical */
 }
 
 /* --- 2. Header e Busca --- */
