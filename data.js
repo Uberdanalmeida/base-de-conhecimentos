@@ -6,7 +6,7 @@ const catalogoFilmes = [
         "genero": "Ficção Científica",
         "sinopse": "Um ladrão que rouba segredos...",
         // Aqui, o caminho é relativo à sua pasta de projeto
-        "imagem": "placeholder_inception.jpg" 
+        "imagem": "Imagens/inception.png" 
     },
     {
         "id": 2,
@@ -14,7 +14,7 @@ const catalogoFilmes = [
         "ano": 1972,
         "genero": "Crime",
         "sinopse": "O patriarca envelhecido...",
-        "imagem": "placeholder_godfather.jpg" 
+        "imagem": "Imagens/godfather.png" 
     },
     {
         "id": 3,
@@ -22,6 +22,6 @@ const catalogoFilmes = [
         "ano": 2014,
         "genero": "Ficção Científica",
         "sinopse": "Uma equipe de exploradores...",
-        "imagem": "placeholder_interstellar.jpg"
+        "imagem": "Imagens/interstellar.png"
     }
 ]; 
