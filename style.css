@@ -125,6 +125,13 @@ header h1 {
     margin-bottom: 5px;
 }
 
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 .movie-info p.sinopse {
     margin-top: 10px;
     font-style: italic;
