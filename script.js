@@ -12,7 +12,7 @@ function criarCardFilme(filme) {
                 <h3>${filme.titulo} (${filme.ano})</h3>
                 <p><strong>Gênero:</strong> ${filme.genero}</p>
                 <p class="sinopse">${filme.sinopse}</p>
-                <a href="${filme.link}" target="_blank">Mais detalhes</a>
+                <a href="${filme.link}" target="_blank" rel="noopener noreferrer">Mais detalhes</a>
             </div>
         </article>`;
 }
