@@ -1,92 +1,92 @@
 const catalogoFilmes = [
     {
         "id": 1,
-        "titulo": "O Poderoso Chefão",
-        "ano": 1972,
-        "genero": "Crime / Drama",
-        "sinopse": "O patriarca de uma dinastia do crime organizado transfere o controle de seu império para o filho relutante.",
-        "imagem": "Imagens/godfather.png",
-        "link": "https://www.imdb.com/title/tt0068646/"
+        "titulo": "Avatar",
+        "ano": 2009,
+        "genero": "Ficção Científica / Aventura",
+        "sinopse": "Um fuzileiro paraplégico é enviado ao planeta Pandora em uma missão única, mas se vê dividido entre seguir ordens e proteger o mundo que passa a considerar seu lar.",
+        "imagem": "Imagens/avatar.png",
+        "link": "https://www.imdb.com/title/tt0499549/"
     },
     {
         "id": 2,
-        "titulo": "Um Sonho de Liberdade",
-        "ano": 1994,
-        "genero": "Drama",
-        "sinopse": "Dois homens presos se ligam ao longo de vários anos, encontrando consolo e eventual redenção através de atos de decência comum.",
-        "imagem": "Imagens/shawshank.png",
-        "link": "https://www.imdb.com/title/tt0111161/"
+        "titulo": "Vingadores: Ultimato",
+        "ano": 2019,
+        "genero": "Super-herói / Ação",
+        "sinopse": "Após os eventos devastadores de Guerra Infinita, os Vingadores remanescentes unem forças para reverter as ações de Thanos e restaurar a ordem no universo.",
+        "imagem": "Imagens/ultimato.png",
+        "link": "https://www.imdb.com/title/tt4154796/"
     },
     {
         "id": 3,
-        "titulo": "Cidadão Kane",
-        "ano": 1941,
-        "genero": "Mistério / Drama",
-        "sinopse": "Após a morte de um magnata da imprensa, repórteres tentam desvendar o significado de sua última palavra: 'Rosebud'.",
-        "imagem": "Imagens/citizen_kane.png",
-        "link": "https://www.imdb.com/title/tt0033467/"
+        "titulo": "Avatar: O Caminho da Água",
+        "ano": 2022,
+        "genero": "Ficção Científica / Fantasia",
+        "sinopse": "Jake Sully e Ney'tiri formaram uma família e fazem de tudo para permanecerem juntos. Eles devem deixar seu lar e explorar as regiões de Pandora quando uma ameaça antiga ressurge.",
+        "imagem": "Imagens/avatar2.png",
+        "link": "https://www.imdb.com/title/tt1630029/"
     },
     {
         "id": 4,
-        "titulo": "O Poderoso Chefão: Parte II",
-        "ano": 1974,
-        "genero": "Crime / Drama",
-        "sinopse": "A vida de Vito Corleone é revisitada, enquanto seu filho Michael expande o sindicato da família em um império.",
-        "imagem": "Imagens/godfather_part2.png",
-        "link": "https://www.imdb.com/title/tt0071562/"
+        "titulo": "Titanic",
+        "ano": 1997,
+        "genero": "Drama / Romance",
+        "sinopse": "Uma jovem da alta sociedade e um artista pobre se apaixonam durante a fatídica primeira viagem do navio 'inafundável'.",
+        "imagem": "Imagens/titanic.png",
+        "link": "https://www.imdb.com/title/tt0120338/"
     },
     {
         "id": 5,
-        "titulo": "Pulp Fiction: Tempo de Violência",
-        "ano": 1994,
-        "genero": "Crime / Drama",
-        "sinopse": "As vidas de dois assassinos de aluguel, um boxeador e um casal de assaltantes se entrelaçam em Los Angeles.",
-        "imagem": "Imagens/pulp_fiction.png",
-        "link": "https://www.imdb.com/title/tt0110912/"
+        "titulo": "Star Wars: O Despertar da Força",
+        "ano": 2015,
+        "genero": "Ficção Científica / Aventura",
+        "sinopse": "Três décadas após a queda do Império Galáctico, uma nova ameaça surge na forma da Primeira Ordem. Um novo grupo de heróis se une para lutar pela galáxia.",
+        "imagem": "Imagens/starwars7.png",
+        "link": "https://www.imdb.com/title/tt2488496/"
     },
     {
         "id": 6,
-        "titulo": "A Lista de Schindler",
-        "ano": 1993,
-        "genero": "Drama Histórico",
-        "sinopse": "Um industrial alemão salva a vida de mais de mil refugiados judeus durante o Holocausto.",
-        "imagem": "Imagens/schindler.png",
-        "link": "https://www.imdb.com/title/tt0108052/"
+        "titulo": "Vingadores: Guerra Infinita",
+        "ano": 2018,
+        "genero": "Super-herói / Ação",
+        "sinopse": "Os Vingadores e seus aliados devem estar dispostos a sacrificar tudo em uma tentativa de derrotar o poderoso Thanos antes que seu ataque de devastação acabe com o universo.",
+        "imagem": "Imagens/guerra_infinita.png",
+        "link": "https://www.imdb.com/title/tt4154756/"
     },
     {
         "id": 7,
-        "titulo": "12 Homens e Uma Sentença",
-        "ano": 1957,
-        "genero": "Drama",
-        "sinopse": "Um júri deve decidir o destino de um adolescente acusado de assassinato em um tenso debate.",
-        "imagem": "Imagens/12_angry_men.png",
-        "link": "https://www.imdb.com/title/tt0050083/"
+        "titulo": "Homem-Aranha: Sem Volta Para Casa",
+        "ano": 2021,
+        "genero": "Super-herói / Ação",
+        "sinopse": "Peter Parker recorre ao Doutor Estranho para que sua identidade secreta seja restaurada, mas o feitiço dá terrivelmente errado, trazendo vilões de outros universos para o seu.",
+        "imagem": "Imagens/homem_aranha_nwh.png",
+        "link": "https://www.imdb.com/title/tt10872600/"
     },
     {
         "id": 8,
-        "titulo": "O Senhor dos Anéis: O Retorno do Rei",
-        "ano": 2003,
-        "genero": "Fantasia / Aventura",
-        "sinopse": "Frodo e Sam alcançam Mordor em sua busca para destruir o Um Anel, enquanto a guerra final começa.",
-        "imagem": "Imagens/return_of_the_king.png",
-        "link": "https://www.imdb.com/title/tt0167260/"
+        "titulo": "Jurassic World",
+        "ano": 2015,
+        "genero": "Ficção Científica / Aventura",
+        "sinopse": "Um novo parque temático de dinossauros é aberto, mas o terror é desencadeado quando uma atração geneticamente modificada e altamente inteligente escapa e aterroriza os visitantes.",
+        "imagem": "Imagens/jurassic_world.png",
+        "link": "https://www.imdb.com/title/tt0369610/"
     },
     {
         "id": 9,
-        "titulo": "Três Homens em Conflito",
-        "ano": 1966,
-        "genero": "Faroeste",
-        "sinopse": "Um caçador de recompensas, um bandido e um pistoleiro competem para encontrar uma fortuna escondida em ouro.",
-        "imagem": "Imagens/good_bad_ugly.png",
-        "link": "https://www.imdb.com/title/tt0060196/"
+        "titulo": "O Rei Leão",
+        "ano": 2019,
+        "genero": "Animação / Aventura",
+        "sinopse": "Após a morte de seu pai, um filhote de leão exilado deve abraçar seu destino como o rei da savana africana.",
+        "imagem": "Imagens/rei_leao_2019.png",
+        "link": "https://www.imdb.com/title/tt6139732/"
     },
     {
         "id": 10,
-        "titulo": "2001: Uma Odisseia no Espaço",
-        "ano": 1968,
-        "genero": "Ficção Científica",
-        "sinopse": "A humanidade encontra um artefato misterioso que influencia a evolução, levando a uma jornada espacial com o computador HAL 9000.",
-        "imagem": "Imagens/2001_odyssey.png",
-        "link": "https://www.imdb.com/title/tt0062622/"
+        "titulo": "Os Vingadores",
+        "ano": 2012,
+        "genero": "Super-herói / Ação",
+        "sinopse": "Nick Fury, diretor da S.H.I.E.L.D., reúne um grupo de super-heróis para salvar o planeta de uma catástrofe de proporções cósmicas.",
+        "imagem": "Imagens/os_vingadores.png",
+        "link": "https://www.imdb.com/title/tt0848228/"
     }
 ];
