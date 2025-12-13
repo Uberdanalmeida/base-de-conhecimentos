@@ -78,8 +78,8 @@ header h1 {
 #movieList {
     padding: 30px 5%;
     display: grid;
-    /* Layout responsivo em colunas */
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    width: 50%;
+    margin: auto;
     gap: 30px;
 }
 
@@ -132,7 +132,6 @@ header h1 {
     /* Limita o número de linhas para a sinopse */
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
 
