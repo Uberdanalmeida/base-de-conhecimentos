@@ -1,7 +1,6 @@
 # 🎬🍿 Catálogo de Filmes
 
-
-![Catálogo de Filmes](imagens/Catalogo-de-filmes.png)
+![Catálogo de Filmes](Imagens/Catalogo-de-filmes.png)
 
 Um projeto simples e elegante desenvolvido com **HTML, CSS e JavaScript puro**, que apresenta um **catálogo interativo com os 10 filmes de maior bilheteria da história**.
 
