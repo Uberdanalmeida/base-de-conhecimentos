@@ -27,7 +27,6 @@ main {
     flex-grow: 1; /* Faz o main expandir e preencher o espaço vertical */
 }
 
-/* --- 2. Header e Busca --- */
 header {
     background-color: #000000;
     padding: 20px 5%;
@@ -75,16 +74,15 @@ header h1 {
     background-color: #ff000d;
 }
 
-/* --- 3. Lista de Filmes (Main) --- */
 #movieList {
     padding: 30px 5%;
+    max-width: 1200px; /* Limite a largura máxima */
+    margin: 0 auto; /* Centraliza a lista */
     display: grid;
-    width: 50%;
-    margin: auto;
     gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
 }
 
-/* --- 4. Card do Filme --- */
 .movie-card {
     background-color: var(--card-bg);
     border-radius: 8px;
@@ -103,7 +101,7 @@ header h1 {
 .movie-card img {
     width: 100%;
     height: 350px; /* Altura fixa para todos os pôsteres */
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    object-fit: cover;
 }
 
 .movie-info {
@@ -143,7 +141,6 @@ a {
     -webkit-box-orient: vertical;
 }
 
-/* --- 5. Mensagens de Status --- */
 .no-results, .loading, .error {
     grid-column: 1 / -1; /* Ocupa todas as colunas no grid */
     text-align: center;
@@ -156,7 +153,6 @@ a {
     color: var(--primary-color);
 }
 
-/* --- 6. Footer --- */
 footer {
     display: flex;
     align-items: center;
@@ -172,7 +168,7 @@ footer > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Garante que os itens se ajustem em telas pequenas */
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -217,44 +213,58 @@ footer img {
         flex-direction: column;
     }
 
+    #searchInput {
+        border-radius: 5px 5px 0 0;
+    }
+
     .search-container button {
         border-radius: 0 0 5px 5px;
         margin-top: 10px;
     }
-    
-    #searchInput {
-         border-radius: 5px 5px 0 0;
-    }
 
     #movieList {
-        grid-template-columns: 1fr; /* Apenas uma coluna em telas pequenas */
+        grid-template-columns: 1fr; 
         padding: 20px 3%;
-        justify-content: center;
     }
 
     .movie-card {
-        flex-direction: row; /* Coloca a imagem ao lado da info */
+        flex-direction: row;
         min-height: auto;
     }
 
     .movie-card img {
-        width: 120px; 
-        height: 180px; 
+        width: 100px; 
+        height: 150px;
         flex-shrink: 0;
     }
 
     .movie-info {
         padding: 10px;
-    }
-    
-    .movie-info p.sinopse {
-         -webkit-line-clamp: 2; /* Sinopse menor no celular */
+        flex-grow: 1; 
     }
 
-    footer > div {
-        flex-direction: column;
+    .movie-info p.sinopse {
+        -webkit-line-clamp: 3;
+        margin-bottom: 0;
     }
     
+    .movie-info h3 {
+        font-size: 1.2em;
+        margin-bottom: 3px;
+    }
+
+    footer > div > div { 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+    
+    footer h2 {
+        margin-bottom: 10px;
+        font-size: 0.9em;
+    }
+
     footer a {
         margin: 5px 10px;
     }
