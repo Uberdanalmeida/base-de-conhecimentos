@@ -84,14 +84,8 @@ header h1 {
 }
 
 .movie-card {
-    background-color: var(--card-bg);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    min-height: 450px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 320px;
+    margin: 0 auto;
 }
 
 .movie-card:hover {
@@ -100,16 +94,16 @@ header h1 {
 
 .movie-card img {
     width: 100%;
-    height: 350px; /* Altura fixa para todos os pôsteres */
+    aspect-ratio: 2 / 3; /* Proporção real de pôster */
     object-fit: cover;
+    display: block;
 }
 
 .movie-info {
     padding: 15px;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 8px;
 }
 
 .movie-info h3 {
@@ -200,72 +194,28 @@ footer img {
 }
 
 @media (max-width: 600px) {
-    header h1 {
-        font-size: 2em;
-        text-align: center;
-    }
-
-    header {
-        padding: 15px;
-    }
-
-    .search-container {
-        flex-direction: column;
-    }
-
-    #searchInput {
-        border-radius: 5px 5px 0 0;
-    }
-
-    .search-container button {
-        border-radius: 0 0 5px 5px;
-        margin-top: 10px;
-    }
 
     #movieList {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         padding: 20px 3%;
     }
 
     .movie-card {
-        flex-direction: row;
-        min-height: auto;
+        max-width: 100%;
     }
 
-    .movie-card img {
-        width: 100px; 
-        height: 150px;
-        flex-shrink: 0;
-    }
-
-    .movie-info {
-        padding: 10px;
-        flex-grow: 1; 
-    }
-
-    .movie-info p.sinopse {
-        -webkit-line-clamp: 3;
-        margin-bottom: 0;
-    }
-    
     .movie-info h3 {
         font-size: 1.2em;
-        margin-bottom: 3px;
     }
 
-    footer > div > div { 
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        width: 100%;
-    }
-    
-    footer h2 {
-        margin-bottom: 10px;
+    .movie-info p {
         font-size: 0.9em;
     }
 
-    footer a {
-        margin: 5px 10px;
+    .movie-info p.sinopse {
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
     }
 }
